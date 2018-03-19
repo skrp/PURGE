@@ -1,0 +1,2 @@
+# PURGE
+kernel harden process
