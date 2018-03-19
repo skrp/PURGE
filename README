@@ -21,4 +21,4 @@ rc.conf
 start.if
 # STRIP #######################
 All but explicit files removed
-LIST => "approved_path sha\n"
+LIST => "approved_path sha perm\n"
