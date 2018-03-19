@@ -1,0 +1,24 @@
+###############################
+# PURGE - kernel harden process
+###############################
+STEPS:
+  [0] loop
+  [1] buildworld
+  [3] conf
+  [2] strip
+# loop ########################
+multi-dimentional-array of jails
+@jail[@host][file]
+`zfs create $_` for (@jail)
+# buildworld ##################
+build exclusions
+src.conf
+# conf ########################
+set conf files 
+pf.conf
+pam.conf
+rc.conf
+start.if
+# STRIP #######################
+All but explicit files removed
+LIST => "approved_path sha\n"
